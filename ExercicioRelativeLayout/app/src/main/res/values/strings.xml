@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExercicioRelativeLayout</string>
+    <string name="edit_email_hint">Email</string>
+    <string name="edit_password_hint">Senha</string>
+    <string name="button_login_text">Login</string>
+    <string name="create_register">Ainda não é cadastrado? Cadastre-se!</string>
+    <string name="forget_password">Esqueceu sua senha?</string>
+</resources>

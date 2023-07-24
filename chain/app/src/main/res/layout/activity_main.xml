@@ -8,27 +8,34 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/buttom_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buttom A"
-        android:id="@+id/buttom_a"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+
+        app:layout_constraintEnd_toStartOf="@id/buttom_b"
+        android:text="Buttom a"
         />
 
     <Button
+        android:id="@+id/buttom_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buttom B"
-        app:layout_constraintCircle="@id/buttom_a"
-        app:layout_constraintCircleAngle="40"
-        app:layout_constraintCircleRadius="200dp"
-        app:layout_constraintTop_toTopOf="@id/buttom_a"
         app:layout_constraintStart_toEndOf="@id/buttom_a"
+        app:layout_constraintTop_toTopOf="@id/buttom_a"
+        app:layout_constraintEnd_toStartOf="@id/buttom_c"
+        android:text="Buttom B"
         />
-
+    <Button
+        android:id="@+id/buttom_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttom_b"
+        app:layout_constraintTop_toTopOf="@id/buttom_b"
+        android:text="Buttom C"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Total KMs" />
+
+    <TextView
+        android:id="@+id/text_distance"
+        android:layout_below="@+id/edit_distance"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Total de Kms" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_distance"
+        android:gravity="center"
+        android:hint="Preço por Litro" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_below="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Preço por litro" />
+
+    <EditText
+        android:id="@+id/edit_autonomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_price"
+        android:gravity="center"
+        android:hint="Autonomia" />
+
+    <TextView
+        android:id="@+id/text_autonomy"
+        android:layout_below="@+id/edit_autonomy"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Autonomia" />
+
+    <TextView
+        android:id="@+id/text_total_spend"
+        android:layout_below="@+id/text_autonomy"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Seu gasto total será de:" />
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_below="@+id/text_total_spend"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="R$: 0" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_total"
+        android:layout_marginTop="16dp"
+        android:text="Calcular" />
+
+
+</RelativeLayout>

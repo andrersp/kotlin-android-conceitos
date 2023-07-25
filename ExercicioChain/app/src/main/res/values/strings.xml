@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExercicioChain</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Senha</string>
+    <string name="text_buttom_login">Login</string>
+    <string name="text_not_registred">Ainda não é cadastrado? Cadastre-se!</string>
+</resources>

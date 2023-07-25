@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/text_email"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="128dp"
+
+        />
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/text_password"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/buttom_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/text_buttom_login"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttom_background_color"
+        android:textColor="@color/buttom_text_color"
+        android:textAllCaps="true"
+        />
+    <TextView
+        android:id="@+id/text_not_registred"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_not_registred"
+        app:layout_constraintTop_toBottomOf="@id/buttom_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
